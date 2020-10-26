@@ -1,0 +1,310 @@
+{
+	"info": {
+		"_postman_id": "3a2d576b-cf0f-4cb4-bfa3-e36d0fcdc835",
+		"name": "APITests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "PutDogForAdoption",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\": \"Šunelis\",\r\n    \"Weight\": 50,\r\n    \"Breed\": \"Siberian Husky\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44325/animalShelter/putDogForAdoption",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44325",
+					"path": [
+						"animalShelter",
+						"putDogForAdoption"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PutCatForAdoption",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\": \"Katyte\",\r\n    \"Weight\": 10,\r\n    \"Breed\": \"Fluffy\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44325/animalShelter/putCatForAdoption",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44325",
+					"path": [
+						"animalShelter",
+						"putCatForAdoption"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PutPussInBootsForAdoption",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44325/animalShelter/putPussInBootsForAdoption",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44325",
+					"path": [
+						"animalShelter",
+						"putPussInBootsForAdoption"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAnimalList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44325/animalShelter/getAnimalList",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44325",
+					"path": [
+						"animalShelter",
+						"getAnimalList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCatDetails",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"AnimalId\": \"Cat_2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44325/animalShelter/getCatDetails",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44325",
+					"path": [
+						"animalShelter",
+						"getCatDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetDogDetails",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"AnimalId\": \"Dog_1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44325/animalShelter/getDogDetails",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44325",
+					"path": [
+						"animalShelter",
+						"getDogDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Adopt",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"AnimalId\": \"Dog_1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44325/animalShelter/adopt",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44325",
+					"path": [
+						"animalShelter",
+						"adopt"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Speak with animal",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"AnimalId\": \"Dog_1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44325/animalShelter/adopt",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44325",
+					"path": [
+						"animalShelter",
+						"adopt"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Feed a treat",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"AnimalId\": \"Dog_1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44325/animalShelter/feedATreat",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44325",
+					"path": [
+						"animalShelter",
+						"feedATreat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Feed a spoiled fish",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"AnimalId\": \"Dog_1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44325/animalShelter/feedATreat",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44325",
+					"path": [
+						"animalShelter",
+						"feedATreat"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "ecd1d027-9eae-4359-b7da-979d008e819d",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "5f848725-4eec-42eb-9eec-104998393b90",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
